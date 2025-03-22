@@ -1,0 +1,861 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz@0,6..72;1,6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+body {
+    background-color: #EDE1D2;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    min-height: 110px;
+    background-color: #EDE1D2;
+    font-family: "Newsreader", serif;
+    position: relative;
+    width: 100%; 
+    /*padding: 0 30px; */
+}
+
+
+.navbar-brand {
+    font-size: 41px;
+    color: black;
+    font-weight: 400;
+    margin-left: 54px;
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    transition: background-color 0.7s, border-radius 0.4s; /*transicion de color y borde*/
+    outline: none;
+
+}
+
+.navbar-toggler:hover {
+    border-radius: 20px;
+    background-color: rgba(250, 235, 215, 0.95);
+}
+
+.navbar-nav {
+    /*ul*/
+    margin-right: 50px;
+} 
+
+
+.nav-item {
+    list-style: none;
+}
+
+
+.nav-link {
+    font-family: "Newsreader", serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+transition: background-color 0.7s, border-radius 0.4s; /*transicion de color y borde*/
+}
+        
+        
+.nav-link:hover {
+    background-color:rgba(250, 235, 215, 0.95);
+    border-radius: 20px;
+}
+
+
+.navbar_line {
+    min-height: 1.5px;
+    width: 95%;
+    background-color: black;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%); /*hace que la linea este siempre centrada*/
+    
+}   
+
+.footer {
+    background-color: #031E00;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 30px;
+}
+
+
+.footer-title {
+    color: rgba(253, 216, 183, 0.88);
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Newsreader", serif;
+    text-align: center;
+}
+
+.icon-mail {
+    color: #EDE1D2;
+}
+
+.icon-textmail {
+    color: rgba(253, 216, 183, 0.88);
+    text-decoration: none;
+    font-family: "Inter", serif;
+    font-size: 16px;
+}
+
+.fa-brands {
+    color: rgba(253, 216, 183, 0.88);
+}
+
+.icon-mail:hover {
+    color: sienna;
+}
+
+.icon-textmail:hover {
+    color: sienna;
+}
+
+.fa-brands:hover {
+    color: sienna;
+}
+
+main {
+    margin-top: 110px;
+    margin-bottom: 70px;
+    min-height: 100vh;
+}
+
+.contactarnos {
+    background-image: url(../img/fondo_formulario.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+    min-height: 800px;
+}
+
+.formulario {
+    background-color: rgba(72, 39, 11, 0.96);
+    padding: 20px;
+    max-width: 800px;
+    min-height: 600px;
+    color: #EDE1D2;
+    border-radius: 5px;
+
+}
+
+.rec-contactanos {
+    background-color: rgba(131, 106, 85, 0.88);
+    min-height: 50px;
+    max-width: 320px;
+    text-align: center;
+}
+
+.rec-contactanos h2 {
+    font-size: 36px;
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form-control {
+    background-color: rgba(72, 39, 11, 0.96);
+    padding: 15px 10px;
+    border-width: 2px;
+}
+
+.button-cont {
+    padding: 15px 130px;
+    border-radius: 45px;
+    background-color: rgba(217, 217, 217, 1);
+    font-family: "Inter", serif;
+}
+
+.form-control::placeholder {
+    font-size: 16px;
+    font-family: "Inter", serif;
+    color: #FFFFFF;
+}
+
+.parte1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagenes {
+    display: flex;
+    flex: 1;
+}
+
+.parte1 p {
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: "Newsreader", serif;
+}
+.imag1 {
+    background-image: url(../img/contacto_1.png);
+}
+
+.imag2 {
+    background-image: url(../img/contacto_2.png);
+}
+
+.imag1, .imag2 {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.imagen-index-fondo {
+    background-image: url(../img/home_img_tem.jpg);
+    background-size: cover;
+    height: 760px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rec-index-opacidad {
+    background-color: rgba(128, 96, 68, 0.5);
+    width: 690px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rec-index-opacidad h1 {
+    color: rgba(255, 255, 255, 0.79);
+    font-size: 60px;
+    text-align: center;
+    font-family: "Newsreader", serif;
+    font-weight: bold;
+}
+
+.recmarron {
+    height: 470px;
+    background: rgba(49, 30, 9, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recmarron p {
+    text-align: center;
+    color: rgba(237, 225, 210, 0.79);
+    font-size: 32px;
+}
+
+.disenandoparavos {
+    background-image: url(../img/home_imagen2.jpg);
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+}
+
+.rec-transparente {
+    display: flex;
+    align-items: end;
+    height: 300px;
+    width: 95%;
+    justify-content: end;
+}
+
+.disenandoparavos h3 {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: "Newsreader", serif;
+}
+
+.imgabt {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 690px;
+}
+
+.img-abt1 {
+    background-image: url(../img/about_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 980px;
+}
+
+.img-abt2 {
+    background-image: url(../img/about_2.jpg);
+}
+
+.img-abt3 {
+    background-image: url(../img/about_3.jpg);
+}
+
+.text-section {
+    background-color: rgba(217, 217, 217, 0.43);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.text-section h2 {
+    margin-left: 40px;
+    font-size: 56px;
+    font-family: "Newsreader", serif;
+}
+
+.linea-vertical {
+    border-left: 2px solid black;
+    min-height: 850px;
+    position: absolute;
+    left: 90%;
+}
+
+.img-arq1 {
+    background-image: url(../img/arqdeco_1.jpg);
+    min-height: 880px;
+    width: 100%;
+}
+
+.img-arq2 {
+    background-image: url(../img/arqdeco_2.jpg);
+    min-height: 400px;
+    width: 50%;
+}
+
+.arq-item h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: "Inter", serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.neuroarq {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-family: "Newsreader", serif;
+}
+
+.arq-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-arq3 {
+    background-image: url(../img/arqdeco_3.jpg);
+    min-height: 340px;
+    margin-top: 10px;
+}
+
+.img-arq4 {
+    background-image: url(../img/arqdeco_4.jpg);
+    min-height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    margin-bottom: 80px;
+}
+
+.div2 {
+    font-family: "Inter", serif;
+}
+
+.div2 h3 {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.div2 p {
+    font-size: 28px;
+}
+
+.button-arq {
+    background-color: rgba(0, 0, 0, 0.53);
+    border-radius: 10px;
+    height: 52px;
+    width: 210px;
+}
+
+
+.button-arq p {
+    color: rgba(255, 255, 255, 0.79);
+    font-size: 18px;
+}
+
+.img-espacios {
+    background-image: url(../img/lifestyle_espacios.jpg);
+}
+
+.img-muebles {
+    background-image: url(../img/lifestyle_mueble.png);
+}
+
+.img-cocina {
+    background-image: url(../img/lifestyle_cocina.png);
+}
+
+.img-color {
+    background-image: url(../img/lifestyle_color.png);
+}
+
+.img-verde {
+    background-image: url(../img/lifestyle_verde.jpg);
+}
+
+.img-exterior {
+    background-image: url(../img/lifestyle_exteriores.png);
+}
+
+.img-aqua {
+    background-image: url(../img/lifestyle_aqua.png);
+}
+
+.img-descanso {
+    background-image: url(../img/lifestyle_relax.png);
+}
+
+.imgchica {
+    min-height: 326px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.imggrande {
+    min-height: 564px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.recg-marron {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 145px;
+    background-color: rgba(72, 39, 11, 0.6);
+    color: rgba(255, 255, 255, 0.79);
+}
+
+.recp-marron {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 85px;
+    background-color: rgba(72, 39, 11, 0.6);
+    color: rgba(255, 255, 255, 0.79);
+}
+
+.categoriag {
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.titulog {
+    font-size: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.categoriac {
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.tituloc {
+    font-size: 28px;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+@media (max-width: 992px){
+    .header {
+        min-height: 140px;
+    }
+    
+    .navbar-brand {
+        font-size: 32px;
+        margin-left: 16px;
+    }
+
+    .navbar-nav {
+        padding: 16px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        margin-left: 16px;
+    }
+
+    .footer-title {
+        font-size: 28px;
+    }
+
+    .icon-textmail {
+        display: none;
+    }
+
+    .icon-mail {
+        font-size: 14px;
+    }
+
+    .fa-brands {
+        font-size: 26px;
+    }
+
+    .contactarnos {
+        min-height: 700px;
+    }
+
+    .formulario {
+        min-height: 270px;
+        max-width: 90%;
+    }
+
+    .rec-contactanos {
+        min-height: 26px;
+        max-width: 160px;
+        margin-bottom: 12px;
+    }
+
+    .rec-contactanos h2 {
+        font-size: 16px;
+    }
+
+    .button-cont {
+        padding: 8px 20px;
+        font-size: 10px;
+    }
+
+    .form-control::placeholder {
+        font-size: 10px;
+    }
+
+    .imag2 {
+        display: none;
+    }
+
+    .imag1{
+        background-image: url(../img/contacto_1.png);
+        width: 100%;
+    }
+    
+    .parte1 p {
+        font-size: 1rem;
+    }
+
+    
+    .imagen-index-fondo {
+        height: 600px;
+        padding-top: 70px;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .rec-index-opacidad {
+        width: 450px;
+        height: 170px;
+    }
+
+    .rec-index-opacidad h1 {
+        font-size: 38px;
+    }
+
+    .recmarron {
+        height: 300px;
+    }
+
+    .recmarron p {
+        font-size: 18px;
+    }
+
+    .disenandoparavos {
+        min-height: 260px;
+    }
+
+    .rec-transparente {
+        height: 200px;
+    }
+
+    .disenandoparavos h3 {
+        font-size: 14px;
+    }
+
+    .mobileabt-section {
+        display: flex;
+    }
+
+    .imgabt {
+        min-height: 350px;
+        width: 25%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .img-abt1 {
+        min-height: 700px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .img-abt3 {
+        width: 100%;
+    }
+
+    .text-section {
+        background-color: rgba(217, 217, 217, 0.43);
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+    }
+
+    .text-section h2 {
+        margin-left: 40px;
+        font-size: 32px;
+        font-family: "Newsreader", serif;
+    }
+
+    .linea-vertical {
+        border-left: 2px solid black;
+        min-height: 320px;
+        position: absolute;
+        left: 90%;
+    }
+
+    .arq-item h2 {
+        font-size: 26px;
+    }
+
+    .neuroarq {
+        font-size: 18px;
+    }
+
+    .div2 {
+        margin-bottom: 100px;
+    }
+    .div2 h3 {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .div2 p {
+        font-size: 16px;
+    }
+
+    .button-arq {
+        background-color: rgba(0, 0, 0, 0.53);
+        border-radius: 10px;
+        height: 52px;
+        width: 210px;
+    }
+
+    .button-arq p {
+        color: rgba(255, 255, 255, 0.79);
+        font-size: 18px;
+    }
+
+    .imgchica {
+        min-height: 180px;
+    }
+
+    .imggrande {
+        min-height: 210px;
+    }
+
+    .recg-marron {
+        min-height: 52px;
+    }
+
+    .recp-marron {
+        min-height: 45px;
+    }
+
+    .categoriag {
+        font-size: 10px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .titulog {
+        font-size: 16px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .categoriac {
+        font-size: 8px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .tituloc {
+        font-size: 14px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .icon-textmail {
+        display: none;
+    }
+
+    .icon-mail {
+        font-size: 10px;
+    }
+
+    .fa-brands {
+        font-size: 22px;
+    }
+}
+
+
+
+/* LIFESTYLE */
+/*
+#lifestyle-container { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+            "espacios espacios muebles muebles"
+            "cocinas tendencia verde exteriores"
+            "agua agua descanso descanso";
+    gap: 50px 35px;
+    margin: 30px;
+}
+
+.ls-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    justify-items: center;
+    align-items: center;
+
+} 
+
+.item-grande {
+    min-height: 564px;
+}
+
+.item-chico {
+    min-height: 326px;
+}
+
+.ls-item:first-child {
+    background-image: url(../img/lifestyle_espacios.jpg);
+    grid-area: espacios;  
+    
+}
+
+.ls-item:nth-child(2) {
+    background-image: url(../img/lifestyle_mueble.png);
+    grid-area: muebles;
+}
+
+.ls-item:nth-child(3) {
+    background-image: url(../img/lifestyle_cocina.png);
+    grid-area: cocinas;
+}
+
+.ls-item:nth-child(4) {
+    background-image: url(../img/lifestyle_color.png);
+    grid-area: tendencia;
+}
+
+.ls-item:nth-child(5) {
+    background-image: url(../img/lifestyle_verde.jpg);
+    grid-area: verde;
+}
+
+.ls-item:nth-child(6) {
+    background-image: url(../img/lifestyle_exteriores.png);
+    grid-area: exteriores;
+}
+
+.ls-item:nth-child(7) {
+    background-image: url(../img/lifestyle_aqua.png);
+    grid-area: agua;
+}
+
+.ls-item:nth-child(8) {
+    background-image: url(../img/lifestyle_relax.png);
+    grid-area: descanso;
+}
+
+.rectangulo {
+    position: absolute;
+    background-color: rgba(72, 39, 11, 0.6);
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.79);
+    text-align: left;
+    bottom: 0;
+}
+
+.rec-grande {
+    padding: 5px;
+    width: 100%;
+}
+
+.rec-chico {
+    padding: 5px;
+    width: 100%;
+}
+
+.rec-grande .titulog {
+    margin: 10px;
+    font-size: 40px;
+}
+
+.rec-grande .categoriag {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.rec-chico .tituloc {
+    font-size: 28px;
+    margin: 10px;
+}
+
+.rec-chico .categoriac {
+    font-size: 14px;
+    margin: 10px;
+}
+
