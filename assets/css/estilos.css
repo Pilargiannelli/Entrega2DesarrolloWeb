@@ -501,7 +501,7 @@ main {
 @media (max-width: 992px){
 
     body {
-        min-height: 1250px;
+        min-height: 1100px;
     }
 
     .header {
@@ -597,7 +597,7 @@ main {
     }
 
     .recmarron {
-        height: 300px;
+        height: 200px;
     }
 
     .recmarron p {
